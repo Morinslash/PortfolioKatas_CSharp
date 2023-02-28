@@ -5,24 +5,20 @@ namespace FizzBuzz.Tests;
 
 public class FizzBuzzShould
 {
-    [Fact]
-    public void Return1AsAStringWhenArrayWithOnly1Passed()
+    [Theory]
+    [InlineData(1, "1")]
+    [InlineData(2, "1,2")]
+    [InlineData(3, "1,2,Fizz")]
+    [InlineData(5, "1,2,Fizz,4,Buzz")]
+    [InlineData(15, "1,2,Fizz,4,Buzz,Fizz,7,8,Fizz,Buzz,11,Fizz,13,14,FizzBuzz")]
+    public void ReturnProperOutput(int numbersRange, string expected)
     {
-        var input = new int[]{1};
-        FizzBuzzEngine.Generate(input).Should().Be("1");
+        var input = GenerateInput(numbersRange);
+        FizzBuzzEngine.Generate(input).Should().Be(expected);
     }
 
-    [Fact]
-    public void Return1And2InCommaSeparatedStringWhenArrayIsWith1And2()
+    private int[] GenerateInput(int range)
     {
-        var input = new int[]{1,2};
-        FizzBuzzEngine.Generate(input).Should().Be("1,2");
-    }
-
-    [Fact]
-    public void Return12FizzWhenArrayRangeIsFrom1To3()
-    {
-        var input = new int[]{1,2,3};
-        FizzBuzzEngine.Generate(input).Should().Be("1,2,Fizz");
+        return Enumerable.Range(1, range).ToArray();
     }
 }
