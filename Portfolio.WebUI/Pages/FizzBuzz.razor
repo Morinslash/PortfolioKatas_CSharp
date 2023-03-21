@@ -1,0 +1,17 @@
+@page "/FizzBuzz"
+@using global::FizzBuzz.Kata
+<h3>FizzBuzz</h3>
+<form @onsubmit="@FizzIt">
+    <input type="number" @bind="range"/>
+    <button>GO!</button>
+</form>
+<p>@result</p>
+@code {
+    private int range;
+    private string result = "";
+    private void FizzIt()
+    {
+        var input = Enumerable.Range(1, range).ToArray();
+        result = FizzBuzzEngine.Generate(input);
+    }
+}

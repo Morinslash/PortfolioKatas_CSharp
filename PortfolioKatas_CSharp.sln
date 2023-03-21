@@ -6,6 +6,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz.Kata", "FizzBuzz.K
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz.Tests", "FizzBuzz.Tests\FizzBuzz.Tests.csproj", "{9EA60F70-3517-4704-86F2-50A4D71655A7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Portfolio", "Portfolio", "{45C43D4A-F365-4DA6-9C7A-6FF0B21DBEE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portfolio.WebUI", "Portfolio.WebUI\Portfolio.WebUI.csproj", "{8B3DF51B-5925-49C2-90CC-1C4AA4DF3F6E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,6 +18,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{49C55009-934B-48DC-BA67-05E829A9EE2F} = {24603980-4D08-4E76-94C4-A8129A05D82C}
 		{9EA60F70-3517-4704-86F2-50A4D71655A7} = {24603980-4D08-4E76-94C4-A8129A05D82C}
+		{8B3DF51B-5925-49C2-90CC-1C4AA4DF3F6E} = {45C43D4A-F365-4DA6-9C7A-6FF0B21DBEE6}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{49C55009-934B-48DC-BA67-05E829A9EE2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -24,5 +29,9 @@ Global
 		{9EA60F70-3517-4704-86F2-50A4D71655A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EA60F70-3517-4704-86F2-50A4D71655A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EA60F70-3517-4704-86F2-50A4D71655A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B3DF51B-5925-49C2-90CC-1C4AA4DF3F6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B3DF51B-5925-49C2-90CC-1C4AA4DF3F6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B3DF51B-5925-49C2-90CC-1C4AA4DF3F6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B3DF51B-5925-49C2-90CC-1C4AA4DF3F6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
